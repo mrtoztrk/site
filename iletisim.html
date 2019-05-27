@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>İletişim</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<style type="text/css">
+a:link {
+	color: #D10003;
+}
+body,td,th {
+	color: #353535;
+}
+</style>
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup"></div>
+    <img src="images/demo/logo.png" width="293" height="113" alt=""/>
+    <p>&nbsp;</p>
+    <nav>
+      <ul>
+        <li><a href="index.html"><strong>ANASAYFA</strong></a></li>
+        <li><a href="hayati.html"><strong>ATAT&Uuml;RK'&Uuml;N HAYATI</strong></a><a href="#"><strong></strong></a></li>
+        <li><a href="ilkeleri.html"><strong>İLKE VE İNKILAPLARI</strong></a></li>
+        <li><a href="fotograflar.html"><strong>fotoĞraflar</strong></a></li>
+        <li><a href="iletisim.html"><strong>İLETİŞİM</strong></a></li>
+        <li><a href="anket.html"><strong>ANKET</strong></a></li>
+        <li><a href="#"><strong></strong></a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+    <div id="homepage" class="clear">
+      <section id="services" class="clear">
+        <p><strong>BİZE ULAŞIN</strong></p>
+        <p><?php
+
+error_reporting (E_ALL ^ E_NOTICE);
+
+	session_start();
+	
+	$sifre = $_SESSION['sifre'];
+	
+
+
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	
+	<meta http-equiv="Content-Language" content="tr">
+	
+	<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-9" />
+	
+	<link rel="stylesheet" href="form.css" type="text/css" media="screen" />
+	
+	<title>iletişim formu</title>
+	
+	<script language="javascript">
+		function RefreshImage(valImageId) {
+			var objImage = document.images[valImageId];
+			if (objImage == undefined) {
+				return;
+			}
+			var now = new Date();
+			objImage.src = objImage.src.split('?')[0] + '?x=' + now.toUTCString();
+		}
+	</script>
+
+</head>
+<body>
+	<div class="form1">
+	
+		<form method="post" action="/iletisim/iletisim.php?islem">
+	
+		<table class="tablo1" width="550" border="0" cellpadding="2" cellspacing="0">
+		
+		<tr>
+			<td width="235"><strong>Adınız *</strong></td>
+			<td width="300"><input class="textbox" name="isim" type="text" size="30" maxlength="100" /></td>
+		</tr>
+		<tr>
+			<td width="235"><strong>Email *</strong></td>
+			<td><input class="textbox" name="eposta" type="text" size="30" maxlength="100" /></td>
+		</tr>
+		<tr>
+			<td width="235"><strong>Konu *</strong></td>
+			<td><input class="textbox" name="konu" type="text" size="30" maxlength="100" /></td>
+		</tr>
+		<tr>
+			<td valign="top" width="235"><strong>Mesajınız *</strong></td>
+			<td><textarea class="textarea"  rows="12" name="mesaj" cols="50"></textarea></td>
+		</tr>
+		<tr>
+			<td width="235"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td width="235">(*) İşaretli alanlar zorunludur !</td>
+		  <td>
+ <input type="button" value="Gönder" onclick="alert('Mesajiniz basariyla iletildi')">
+</td>
+		</tr>
+
+		<tr>
+			<td width="235"></td>
+			
+		</tr>
+		</table>
+	</form>
+</div>
+</body>
+</html></p>
+      </section>
+      <section class="fl_left">
+        <article>
+          <h1>ANKET</h1>
+          <p>&nbsp;</p>
+        </article>
+      </section>
+      <section class="clear">
+        <p>&nbsp;</p>
+      </section>
+    <!-- Left Box --><!-- Right Box --></div>
+    <!-- / content body -->
+  </div>
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    Murat Öztürk © 2019</footer>
+</div>
+</body>
+</html>
